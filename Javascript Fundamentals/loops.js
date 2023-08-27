@@ -25,9 +25,15 @@ const symbol = "* ";
 //   console.log(symbol.repeat(i));
 // }
 
-const instructorName = "Prakash Narsinghrao Sakari";
+// const instructorName = "Prakash Narsinghrao Sakari";
 
-console.log(instructorName.length);
-for (let i = 0; i < instructorName.length; i++) {
-  console.log(instructorName[i]);
+// console.log(instructorName.length);
+// for (let i = 0; i < instructorName.length; i++) {
+//   console.log(instructorName[i]);
+// }
+
+for (let i = 1; i <= 10; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
 }
