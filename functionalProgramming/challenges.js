@@ -1,13 +1,16 @@
-/**
- * Factorial
- */
+function printPrimeFactorialization(n) {
+  let factor = 2;
 
-const factorial = (num) => {
-  if (num < 1) return -1;
-  let product = 1;
-  for (let i = 1; i <= num; i++) {
-    product *= i;
+  while (n > 1) {
+    if (n % factor === 0) {
+      process.stdout.write(factor.toString() + " ");
+      n /= factor;
+    } else {
+      if (factor === 2) {
+        factor = factor + 1;
+      } else factor += 2;
+    }
   }
-  return product;
-};
-console.log(factorial(-3));
+}
+
+printPrimeFactorialization(100);
